@@ -1,0 +1,97 @@
+/* pages/shequ/shequ.wxss */
+
+.view-box{
+  display:flex;
+  width:750rpx;
+  background-color: #fff;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom:20rpx;
+  padding-bottom:20rpx;
+}
+.user{
+  height:100rpx;
+  width:750rpx;
+  margin-bottom:20rpx;
+  display:flex;
+  padding:10rpx 0 10rpx 20rpx;
+  vertical-align: middle;
+  align-items: center;
+  
+  /* border-bottom: 3rpx solid rgb(220,220,220); */
+}
+.user image{
+  display:flex;
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+}
+.user text:first-child{
+  margin-top:10rpx;
+  font-size:35rpx;
+  color:#3bcab2;
+  line-height:60rpx;
+  display:flex;
+  margin-left:30rpx;
+}
+.user text:nth-child(2){
+  margin-top:-10rpx;
+  font-size:26rpx;
+  color:#515151;
+  line-height:60rpx;
+  display:flex;
+  margin-left:30rpx;
+}
+.view textarea{
+  width:690rpx;
+  line-height:1.5;
+  padding:20rpx 0 20rpx 30rpx;
+  height:auto;
+  letter-spacing:3rpx;
+  white-space:pre-wrap;
+  white-space:-moz-pre-wrap;
+  white-space:-o-pre-wrap;
+  word-wrap:break-word;
+}
+.picture{
+  height:200rpx;
+  width:200rpx;
+  display:inline-block;
+  margin-left:30rpx;
+  margin-right:10rpx;
+}
+input{
+  height:40rpx;
+  background-color: rgb(245, 245, 245);
+  width:680rpx;
+  margin:20rpx 0 20rpx 30rpx;
+  border:solid rgb(220,220,220) 3rpx;
+  font-size: 28rpx;
+  padding-left:10rpx;
+}
+.review{
+  width:690rpx;
+  display:block;
+  margin:0 0 5rpx 30rpx;
+  font-size: 26rpx;
+  white-space:normal;
+  word-break:break-all;
+  word-wrap:break-word;
+}
+.review:active{
+  background-color: rgb(245, 245, 245);
+}
+
+/* 发布 */
+.cart{
+  height:80rpx;
+  width:80rpx;
+  position:fixed;
+  bottom:30rpx;
+  left:30rpx;
+  /* background-color: black; */
+}
+.cart image{
+  width:100%;
+  height:100%;
+}

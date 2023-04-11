@@ -1,0 +1,92 @@
+<!--pages/shouye/shouye.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<!-- 轮播图 -->
+<view class="banner">
+  <swiper indicator-dots="true" indicator-active-color="rgba(255,255,255,50)" indicator-color="rgba(236,236,236,50)" autoplay="true" circular="true">
+    <block wx:for="{{bannerPic}}" wx:key="key">
+      <swiper-item>
+        <image src='{{item.image}}' style="width:100%;height:100%"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+<!-- 主题栏 -->
+<view class='theme-container'>
+  <block wx:for="{{themes}}"  wx:key="key">
+    <view class='theme-box' bindtap='gotojingxuan' data-themetype="{{item.theme_type}}">
+      <view class='theme-icon'>
+        <image src='{{item.themePic}}'></image>
+      </view>
+      <text>{{item.themeName}}</text>
+    </view>
+  </block>
+</view>
+
+<!-- 公告栏 -->
+<view class='swiper-notice'>
+  <text>公告 |</text>
+  <swiper class='swiper-nav' vertical='true' autoplay='true' circular='true' interval='3000' >
+    <block wx:for='{{noticeList}}' wx:key='key'>
+     <swiper-item>
+       <view class='swiper-context'>{{item.context}}</view>
+     </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 今日推荐 -->
+<view class='today-container'>
+  <view class='today book'>
+    <image src='{{commendCover}}'></image>
+  </view>
+  <view class='today word'>
+    <text>今日推荐</text>
+    <text>{{commendName}}</text>
+    <text>￥{{commendPrice}}</text>
+    <button bindtap='gotoxiangqing'>立即购买</button>
+  </view>
+</view>
+
+<!-- 新书上架 -->
+<view class='newbook-container'>
+  <view class='newbook-text'>
+    <text class='newbook-text'>-新书上架-</text>
+  </view> 
+  <view class='newbook-book'>
+    <block wx:for="{{newBook}}"  wx:key="key">
+      <view class='newbook-box' bindtap='newbookgotoxiangqing' data-bookname="{{item.name}}">
+        <view class='newbook-icon'>
+          <image src='{{item.cover}}'></image>
+        </view>
+        <text class='newbook-name'>{{item.name}}</text>
+        <text class='newbook-price'>￥{{filters.toFix(item.price)}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+ <!-- 团购优惠 -->
+<view class='together-container'>
+  <view class='together-name'>
+    <view class='line'></view>
+    <text class='text'>团购优惠</text>
+  </view>
+  <view class='together-book'>
+    <block wx:for="{{togetherBook}}" wx:key="key">
+      <view class='together-box'>
+        <view class='together-left'>
+          <image src="{{item.cover}}"></image>
+        </view>
+        <view class='together-right'>  
+          <text>{{item.name}}</text>
+          <text>原价{{filters.toFix(item.price)}}</text>
+          <text>团购价￥{{filters.toFix(item.togetherPrice)}}</text>
+          <button class='go' bindtap='togetherbuy' data-bookname="{{item.name}}" data-bookprice="{{item.togetherPrice}}" data-bookcover="{{item.cover}}">立即购买</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

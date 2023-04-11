@@ -1,0 +1,28 @@
+<!--pages/fabu/fabu.wxml-->
+<!-- 标头 -->
+<view class="title">
+  <text>| 发布图书</text>
+  <button bindtap="up">发布</button>
+</view>
+
+<view class='bookname'>
+  <text>书名：</text>
+  <input bindinput="getname"></input>
+</view>
+<view class='bookprice'>
+  <text>价格：</text>
+  <input bindinput="getprice" type="digit"></input>
+  <text>元</text>
+</view>
+<view class='bookcover'>
+  <text>封面：</text>
+  <image  src="../../image/addpicture.png" wx:if='{{imgsrc.length == 0}}'bindtap="uploadcover"></image>
+  <image  src="{{imgsrc}}"></image>
+  <icon wx:if='{{imgsrc.length !== 0}}' bindtap='clearimg' type="clear" size="20" color="red"/>
+</view>
+<view class='bookdetail'>
+  <text>详情：</text>
+  <textarea bindinput="getdetail" placeholder="买家都关心新旧程度、转手原因...（最多可输入200个字符）" maxlength="200"></textarea>
+</view>
+
+

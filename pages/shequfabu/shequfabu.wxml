@@ -1,0 +1,16 @@
+<!--pages/shequfabu/shequfabu.wxml-->
+<!-- 标头 -->
+<view class="title">
+  <text>| 发布动态</text>
+  <button bindtap="up">发布</button>
+</view>
+
+<!-- 动态内容 -->
+<view class="content">
+  <textarea bindinput="getdetail" placeholder="分享新鲜事（最多可输入200个字符）" maxlength="200"></textarea>
+  <view class="img" wx:for="{{imgsrc}}" wx:key="index" >
+    <image mode="aspectFill" bindtap='showImg' data-index="{{index}}" src="{{item}}"></image>
+    <icon catchtap='clearimg' type="clear" size="20" color="red" data-index="{{index}}"/>
+  </view>
+  <image  src="../../image/addpicture.png" wx:if='{{imgsrc.length < 3}}' bindtap="uploadcover"></image>
+</view>

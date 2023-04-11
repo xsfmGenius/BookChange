@@ -1,0 +1,29 @@
+<!--pages/shequ/shequ.wxml-->
+<view class='view'>
+  <block wx:for="{{view}}" wx:key="index">
+    <view class="view-box">
+      <view class='user'>
+        <view class="left">
+          <image src="{{item.userprofile}}"></image>
+        </view>
+        <view class="right">
+          <text>{{item.username}}</text>
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+      <textarea disabled>{{item.detail}}</textarea>
+      <block wx:for="{{item.image}}" wx:key="index" wx:for-index="index2">
+        <image class='picture' bindtap='showImg' data-key="{{index2}}" data-index="{{index}}" mode="aspectFill" src="{{item}}"></image>
+      </block>
+      <input placeholder="评论" value="{{inputValue}}" confirm-type='send' bindinput="getreview" bindconfirm="sendreview" data-index="{{index}}"></input>
+      <block wx:for="{{item.review}}" wx:key="index" wx:for-index="index2">
+        <text bindtap='deletereview' data-item="{{item}}" data-key="{{index2}}" data-index="{{index}}" class='review'>{{item}}</text>
+      </block>
+    </view>
+  </block>
+</view>
+
+<!-- 发布 -->
+<view class="cart" bindtap="gotofabu">
+  <image src='../../image/add.png'></image>
+</view>

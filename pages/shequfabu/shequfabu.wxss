@@ -1,0 +1,73 @@
+/* pages/shequfabu/shequfabu.wxss */
+/* 标头 */
+.title{
+  display:flex;
+  width:750rpx;
+  height:55rpx;
+  margin-bottom:5rpx;
+  background-color: #fff;
+  padding:10rpx 0 10rpx 20rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.title text{
+  font-size: 38rpx;
+  color: #3bcab2;
+  letter-spacing:10rpx;
+  font-weight:bold;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.title button{
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+  display:flex;
+  width:140rpx;
+  height:55rpx;
+  font-size: 28rpx;
+  margin-left:320rpx;
+  background-color: #3bcab2;
+  color:#fff;
+  border-radius: 50rpx;
+}
+.title button:active{
+  background-color: #1cb69c;
+}
+
+/* 动态内容 */
+.content{
+  padding:30rpx;
+  background-color: #fff;
+  display:flex;
+  width:750rpx;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.content textarea{
+  width:690rpx;
+  line-height:1.5;
+  padding-bottom:20rpx;
+  /* height:auto; */
+  letter-spacing:3rpx;
+  white-space:pre-wrap;
+  white-space:-moz-pre-wrap;
+  white-space:-o-pre-wrap;
+  word-wrap:break-word;
+}
+.content image{
+  margin-right:10rpx;
+  height:200rpx;
+  width:200rpx;
+  display:inline-block;
+}
+.content icon{
+  position:relative;
+  right:30rpx;
+  bottom:180rpx;
+}

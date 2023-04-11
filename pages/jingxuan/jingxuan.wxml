@@ -1,0 +1,44 @@
+<!--pages/jingxuan/jingxuan.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<!-- 头图 -->
+<view class="banner">
+  <image src='https://s1.imagehub.cc/images/2023/02/14/0625d780fb9d4551c147692860c0ec00.png' style="width:100%;height:100%"></image>
+</view>
+
+<!-- 搜索 -->
+<view class='search'>
+  <input value="{{inputValue}}" confirm-type='search' placeholder='搜索图书' bindinput="getname" bindconfirm="searchbook"></input>
+  <image class="search_image" src='../../image/search.png' bindtap="searchbook"></image>
+</view>
+
+<!-- 分类图书 -->
+<view class='container'>
+  <scroll-view class='left-container' scroll-y="true">
+    <block wx:for="{{menuCategories}}" wx:key="key">
+      <view class="categoryBar {{ menuSelect==item.category_type?'active':''}}" bindtap='choosecategory' data-cat='{{item.category_type}}'>
+        <text >{{item.category_name}}</text>
+      </view>
+    </block>  
+  </scroll-view>
+   <view class='right-container'>
+    <block wx:for="{{categoryBook}}" wx:key="key">
+      <view class='category-box'  bindtap='gotoxiangqing' data-bookname="{{item.name}}">
+        <view class='category-left'>
+          <image src="{{item.cover}}"></image>
+        </view>
+        <view class='category-right'>  
+          <text>{{item.name}}</text>
+          <text>￥{{filters.toFix(item.price)}}</text>
+          <button class='go' catchtap="goshop" data-bookname="{{item.name}}" data-bookprice="{{item.price}}" data-bookcover="{{item.cover}}">+</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!-- 购物车 -->
+<view class="cart" bindtap="gotogouwuche">
+  <image src='../../image/cart_2.png'></image>
+</view>
+
+

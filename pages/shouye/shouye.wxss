@@ -1,0 +1,309 @@
+/* pages/shouye/shouye.wxss */
+/* 轮播图 */
+.banner{
+  height:350rpx;
+}
+swiper{
+  height:100%;
+}
+.wx-swiper-dots.wx-swiper-dots-horizontal {
+  width: 90%;
+  text-align: right;
+}
+.wx-swiper-dots .wx-swiper-dot{
+  width: 10rpx;   
+  height: 10rpx;  
+  border-radius: 5rpx; 
+}
+
+/* 主题栏 */
+.theme-container{
+  margin:10rpx 0 0 0;
+  width: 750rpx;
+  height: 170rpx;
+  display: inline-flex;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.theme-box{
+  margin:40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center; 
+}
+.theme-icon image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.theme-box text{
+  height:28rpx;
+  font-size:26rpx;
+  color:#515151;
+  margin-top:5rpx;
+}
+
+
+/* 公告栏 */
+.swiper-notice {
+  margin:10rpx 0 0 0;
+  background-color:#fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-notice text {
+  font-size: 28rpx;
+  color: #515151;
+}
+.swiper-notice image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.swiper-nav {
+  height: 60rpx;
+  width: 80vw;
+  margin-left: 10rpx;
+}
+.swiper-nav swiper-item {
+  display: flex;
+  align-items: center;
+}
+.swiper-context {
+  font-size: 28rpx;
+  overflow: hidden;
+  color: #515151;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2rpx;
+}
+
+/* 今日推荐 */
+.today-container{
+  margin:20rpx 10rpx 0 10rpx;
+  display: flex;
+  background: linear-gradient(
+    to bottom,
+    #3bcab2 0%,
+    #3bcab2 50%,
+    #fff 50%,
+    #fff 100%
+  );
+  border-radius:20rpx;
+}
+.today{
+  height:200px;
+}
+.book{
+  display: flex;
+  width:50%;
+}
+.book image{
+  width: 90%;
+  height: 85%;
+  margin: auto;
+}
+.word{
+  width:55%;
+}
+.word text{
+  display:block;
+}
+.word text:first-child{
+  margin:50rpx 0 0 20rpx;
+  font-size: 40rpx;
+  color: #fff;
+  font-style:italic;
+  letter-spacing:7rpx;
+  font-weight:bold;
+}
+.word text:nth-child(2){
+  margin:25rpx 0 0 20rpx; 
+  font-size: 30rpx;
+  color: #fff;
+}
+.word text:nth-child(3){
+  margin:90rpx 0 0 20rpx;
+  font-size: 37rpx;
+  color: #3bcab2;
+  display:inline-block;
+}
+.word button{
+  display:inline-block;
+  width:155rpx;
+  height:55rpx;
+  font-size: 22rpx;
+  margin:90rpx 0 -16rpx 50rpx;
+  letter-spacing:2rpx;
+  background-color: #3bcab2;
+  color:#fff;
+}
+.word button text{
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.word button:active{
+  background-color: #1cb69c;
+}
+
+/* 新书上架 */
+.newbook-container{
+  border-radius:20rpx;
+  margin:20rpx 10rpx 0 10rpx;
+  height: 1000rpx;
+  display: block;
+  border-style:solid; 
+  border-color: #3bcab2; 
+  background-color: #fff;
+}
+.newbook-text{
+  display:block;
+  height:8%;
+  background-color:#3bcab2;
+  border-bottom:solid;
+  border-color:#3bcab2;
+  border-width:10rpx;
+}
+.newbook-text text{
+  height:100%;
+  width:100%;
+  font-size: 40rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing:20rpx;
+  font-weight:bold;
+}
+.newbook-book{
+  display: flex;
+  height:92%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+  flex-direction: column;
+}
+.newbook-box{
+  width:49.3%;
+  height:49.3%;
+  flex-direction: column;
+  align-items:center;
+  display: inline-flex;
+  justify-content: center;  
+  border-top:dotted;
+  border-color:#3bcab2
+}
+.newbook-icon image{
+  width: 300rpx;
+  height: 300rpx;
+}
+.newbook-name{
+  height:25rpx;
+  font-size:23rpx;
+  margin:5rpx 0 10rpx 0;
+}
+.newbook-price{
+  margin:20rpx 0 -10rpx 0;
+  height:25rpx;
+  font-size:28rpx;
+  color:#3bcab2;
+  margin-top:5rpx;
+}
+
+
+/* 团购优惠 */
+.together-container{
+  margin:20rpx 10rpx 0 10rpx;
+  background-color: #fff;
+  border-color: #3bcab2;
+  padding-bottom:1rpx;
+}
+.together-name{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20rpx 0 20rpx 32rpx;
+  background-color: #3bcab2;
+}
+.line{
+  width:8rpx;
+  height:35rpx;
+  background:#fff;
+  border-radius:6rpx;
+  align-items: center;
+  justify-content: center;
+}
+.together-name text{
+  padding-left: 19rpx;
+  font-size: 35rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing:10rpx;
+  font-weight:bold;
+}
+.together-book{
+  padding-top:10rpx;
+}
+.together-box{
+  display: flex;
+  height:300rpx;
+  margin:0 0 10rpx 0;
+  border:5rpx solid rgba(220,220,220,1);
+  border-radius:10rpx;
+  background:#fff;
+}
+.together-left{
+  display: flex;
+  width:40%;
+  height:100%;
+}
+.together-left image{
+  width: 95%;
+  height: 95%;
+  margin: auto;
+}
+.together-right{
+  width: 60%;
+  height:180rpx;
+  margin:34rpx 0 0 10rpx;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.together-right text{
+  display:block;
+}
+.together-right text:first-child{
+  font-size: 30rpx;
+  margin:10rpx 10rpx 0 10rpx; 
+  color: #000;
+  /* letter-spacing:7rpx; */
+}
+.together-right text:nth-child(2){
+  margin:60rpx 10rpx 0 10rpx; 
+  font-size: 25rpx;
+  color: rgb(165, 165, 165);
+  text-decoration:line-through;
+}
+.together-right text:nth-child(3){
+  margin:15rpx 10rpx 0 10rpx;
+  font-size: 33rpx;
+  color: #3bcab2;
+  display:inline-block;
+}
+.together-right button{
+  display:inline-block;
+  width:155rpx;
+  height:55rpx;
+  font-size: 22rpx;
+  margin:15rpx 0 -16rpx 25rpx;
+  letter-spacing:2rpx;
+  background-color: #3bcab2;
+  color:#fff;
+}
+.together-right button:active{
+  background-color: #1cb69c;
+}

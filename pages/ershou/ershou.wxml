@@ -1,0 +1,39 @@
+<!--pages/ershou/ershou.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<!-- 头图 -->
+<view class="banner">
+  <image src='https://s1.imagehub.cc/images/2023/02/16/14f51eece966c39db6fd50e89ac53230.jpeg' style="width:100%;height:100%"></image>
+</view>
+
+<!-- 搜索 -->
+<!-- <view class='search'>
+  <input value="{{inputValue}}" confirm-type='search' placeholder='搜索二手' bindinput="getname" bindconfirm="searchbook"></input>
+  <image class="search_image" src='../../image/search.png' bindtap="searchbook"></image>
+</view> -->
+
+<!-- 新书上架 -->
+<view class='oldbook-container'>
+  <view class='oldbook-text'>
+    <text class='oldbook-text'>-现有图书-</text>
+  </view> 
+  <view class='oldbook-book'>
+    <block wx:for="{{oldBook}}"  wx:key="key">
+      <view class='oldbook-box'  bindtap='gotoershouxiangqing' data-id="{{item._id}}">
+        <view class='oldbook-icon'>
+          <image src='{{item.bookcover}}'></image>
+        </view>
+        <text class='oldbook-name'>{{item.bookname}}</text>
+        <text class='oldbook-price'>￥{{item.bookprice}}</text>
+        <view class='user'>
+          <image src='{{item.userprofile}}'></image>
+          <text>{{item.username}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!-- 发布 -->
+<view class="cart" bindtap="gotofabu">
+  <image src='../../image/add.png'></image>
+</view>

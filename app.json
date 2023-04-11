@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/shouye/shouye",
+    "pages/jingxuan/jingxuan",
+    "pages/ershou/ershou",
+    "pages/shequ/shequ",
+    "pages/wode/wode",
+    "pages/xiangqing/xiangqing",
+    "pages/sousuo/sousuo",
+    "pages/gouwuche/gouwuche",
+    "pages/fabu/fabu",
+    "pages/ershouxiangqing/ershouxiangqing",
+    "pages/shequfabu/shequfabu",
+    "pages/xinxi/xinxi",
+    "pages/wodingdan/wodingdan",
+    "pages/wofabu/wofabu",
+    "pages/wofatie/wofatie"
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "书易",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": 
+  {
+    "color": "#515151",
+    "selectedColor": "#45b97c",
+    "backgroundColor": "#FFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "iconPath": "image/home_off.png",
+        "selectedIconPath": "image/home_on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/jingxuan/jingxuan",
+        "iconPath": "image/Tabulation_off.png",
+        "selectedIconPath": "image/Tabulation_on.png",
+        "text": "精选图书"
+      },
+      {
+        "pagePath": "pages/ershou/ershou",
+        "iconPath": "image/exchange_off.png",
+        "selectedIconPath": "image/exchange_on.png",
+        "text": "二手图书"
+      },
+      {
+        "pagePath": "pages/shequ/shequ",
+        "iconPath": "image/community_off.png",
+        "selectedIconPath": "image/community_on.png",
+        "text": "社区交流"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "iconPath": "image/mine_off.png",
+        "selectedIconPath": "image/mine_on.png",
+        "text": "个人中心"
+      }
+      
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

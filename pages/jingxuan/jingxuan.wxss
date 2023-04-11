@@ -1,0 +1,142 @@
+/* pages/jingxuan/jingxuan.wxss */
+/* 头图 */
+.banner{
+  height:350rpx;
+}
+
+/* 搜索 */
+.search{
+  margin-top: 10rpx;
+  display: flex;
+  height:70rpx;
+  background-color:#fff;
+  padding:20rpx 40rpx 20rpx 40rpx;
+}
+.search input{
+  padding-left:25rpx;
+  display:inline-block;
+  width:630rpx;
+  height:70%;
+  border-radius:40rpx 0 0 40rpx;
+  border-style: solid;
+  border-right-style: none;
+  border-color:#a6a6a6;
+  align-self: center;
+}
+.search image{
+  display:inline-block;
+  margin-left:-5rpx;
+  height:70%;
+  width:50rpx;
+  align-self: center;
+  border-style: solid;
+  border-color:#a6a6a6;
+  border-radius:0 40rpx 40rpx 0;
+  border-left-style: none;
+}
+
+/* 分类图书 */
+.container{
+  margin-top:10rpx;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  /* align-items:flex-start;
+  flex-direction:row; */
+}
+.left-container{
+  width:25%;
+  height: 100%;
+  background:#f6f6f6;
+}
+.categoryBar{
+  display: inline-flex;
+  width:100%;
+  height:100rpx;
+  justify-content: center;
+  align-items: center;
+  color:#515151;
+  border-bottom:3rpx solid rgb(220,220,220);
+}
+.categoryBar text{
+  font-size:26rpx;
+}
+.active{
+  background:#fff;
+  border-left:8rpx solid #3bcab2;
+}
+.active text{
+  color: #3bcab2;
+}
+
+
+.right-container{
+  width:75%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.category-box{
+  display: flex;
+  height:200rpx;
+  background:#fff;
+}
+.category-left{
+  display: flex;
+  width:35%;
+  height:100%;
+}
+.category-left image{
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+.category-right{
+  width: 60%;
+  height:100%;
+  margin:34rpx 0 0 10rpx;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.category-right text{
+  display:block;
+}
+.category-right text:first-child{
+  font-size: 30rpx;
+  margin:0 10rpx 0 10rpx; 
+  color: #000;
+}
+.category-right text:nth-child(2){
+  margin:30rpx 10rpx 0 10rpx;
+  font-size: 33rpx;
+  color: #3bcab2;
+  display:inline-block;
+}
+.category-right button{
+  display:inline;
+  font-size: 32rpx;
+  margin-left:100rpx;
+  /* margin:15rpx 0 -16rpx 55rpx; */
+  /* padding:10rpx; */
+  background-color: #3bcab2;
+  color:#fff
+}
+.category-right button:active{
+  background-color: #1cb69c;
+}
+
+/* 购物车 */
+.cart{
+  height:80rpx;
+  width:80rpx;
+  position:fixed;
+  bottom:30rpx;
+  left:30rpx;
+  /* background-color: black; */
+}
+.cart image{
+  width:100%;
+  height:100%;
+}

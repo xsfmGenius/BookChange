@@ -1,0 +1,89 @@
+/* pages/sousuo/sousuo.wxss */
+
+/* 搜索 */
+.search{
+  margin-bottom: 10rpx;
+  display: flex;
+  height:70rpx;
+  background-color:#fff;
+  padding:20rpx 40rpx 20rpx 40rpx;
+}
+.search input{
+  padding-left:25rpx;
+  display:inline-block;
+  width:630rpx;
+  height:70%;
+  border-radius:40rpx 0 0 40rpx;
+  border-style: solid;
+  border-right-style: none;
+  border-color:#a6a6a6;
+  align-self: center;
+}
+.search image{
+  display:inline-block;
+  margin-left:-5rpx;
+  height:70%;
+  width:50rpx;
+  align-self: center;
+  border-style: solid;
+  border-color:#a6a6a6;
+  border-radius:0 40rpx 40rpx 0;
+  border-left-style: none;
+}
+
+/* 搜索结果 */
+.right-container{
+  width:750rpx;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.category-box{
+  display: flex;
+  height:250rpx;
+  background:#fff;
+}
+.category-left{
+  display: flex;
+  width:30%;
+  height:100%;
+}
+.category-left image{
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+.category-right{
+  width: 70%;
+  height:100%;
+  margin:34rpx 0 0 10rpx;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.category-right text{
+  display:block;
+}
+.category-right text:first-child{
+  font-size: 30rpx;
+  margin:20rpx 40rpx 0 10rpx; 
+  color: #000;
+}
+.category-right text:nth-child(2){
+  margin:50rpx 10rpx 0 10rpx;
+  font-size: 33rpx;
+  color: #3bcab2;
+  display:inline-block;
+}
+.category-right button{
+  display:inline;
+  font-size: 32rpx;
+  margin-left:230rpx;
+  /* margin:15rpx 0 -16rpx 55rpx; */
+  /* padding:10rpx; */
+  background-color: #3bcab2;
+  color:#fff
+}
+.category-right button:active{
+  background-color: #1cb69c;
+}

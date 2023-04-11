@@ -1,0 +1,130 @@
+/* pages/ershouxiangqing/ershouxiangqing.wxss */
+/* 用户 */
+.user{
+  display:flex;
+  /* height:80rpx; */
+  padding:20rpx;
+  vertical-align: middle;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 3rpx solid rgb(220,220,220);
+  /* justify-content: center; */
+  /* margin:10rpx 0 0 20rpx; */
+  /* background-color: #3bcab2; */
+}
+.user image{
+  display:flex;
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+}
+.user text{
+  font-size:35rpx;
+  /* color:#515151; */
+  line-height:80rpx;
+  display:flex;
+  margin-left:30rpx;
+}
+
+/* 图书 */
+.book{
+  padding:30rpx;
+  background-color: #fff;
+  display:block;
+  width:750rpx;
+}
+.book text:first-child{
+  width:690rpx;
+  display:block;
+  height:50rpx;
+  font-size:38rpx;
+  font-weight:bold;
+  letter-spacing:3rpx;
+  /* margin:10rpx 0 0 20rpx; */
+}
+.book text:nth-child(2){
+  display:block;
+  /* margin-left:20rpx; */
+  margin-top:25rpx;
+  margin-bottom:25rpx;
+  font-size:45rpx;
+  font-weight:bold;
+  color:#3bcab2;
+}
+.book textarea{
+  width:690rpx;
+  line-height:1.5;
+  padding-bottom:20rpx;
+  height:auto;
+  letter-spacing:3rpx;
+  white-space:pre-wrap;
+  white-space:-moz-pre-wrap;
+  white-space:-o-pre-wrap;
+  word-wrap:break-word;
+}
+.book image{
+  height:810rpx;
+  width:690rpx;
+}
+
+/* 底边栏 */
+.bottom-container{
+  height:90rpx;
+  width:750rpx;
+  display: flex;
+  line-height:80rpx;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  background-color: #fff;
+  border-top: solid;
+  border-color:rgb(220,220,220);
+  border-width: 3rpx;
+}
+.bottom-container view:first-child{
+  height:100%;
+  width:40%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  /* border-right:solid;
+  border-color:rgb(220,220,220);
+  border-width:1rpx;  */
+}
+.bottom-container view:nth-child(2){
+  height:100%;
+  width:30%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.bottom-container view:nth-child(3){
+  height:100%;
+  width:30%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.bottom-container button{
+  width: 80%;
+  height:80%;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  letter-spacing:2rpx;
+  border:0;
+}
+.connect{
+  background-color: #3bcab2;
+  color:#fff;
+}
+.connect:active{
+  background-color: #1cb69c;
+}
+.go{
+  background-color: #45b97c;
+  color:#fff;
+  
+}
+.go:active{
+  background-color: #52ac7c;
+}

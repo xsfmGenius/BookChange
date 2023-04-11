@@ -1,0 +1,15 @@
+<!--pages/wofabu/wofabu.wxml-->
+<view class='container'>
+    <block wx:for="{{book}}" wx:key="index">
+      <view class='together-box' bindtap="gotoxiangqing" data-id="{{item._id}}">
+        <view class='together-left'>
+          <image src="{{item.bookcover}}"></image>
+        </view>
+        <view class='together-right'>  
+          <text>{{item.bookname}}</text>
+          <text>￥{{item.bookprice}}</text>
+          <image src="../../image/delete.png" catchtap="delete" data-id="{{item._id}}" data-index="{{index}}"></image>
+        </view>
+      </view>
+    </block>
+  </view>

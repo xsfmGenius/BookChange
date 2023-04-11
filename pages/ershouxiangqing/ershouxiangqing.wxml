@@ -1,0 +1,22 @@
+<!--pages/ershouxiangqing/ershouxiangqing.wxml-->
+<!-- 用户 -->
+<view class='user'>
+  <image src="{{book.userprofile}}"></image>
+  <text>{{book.username}}</text>
+</view>
+<view class="book">
+  <text>{{book.bookname}}</text>
+  <text>￥{{book.bookprice}}</text>
+  <textarea disabled>{{book.bookdetail}}</textarea>
+  <image src="{{book.bookcover}}"></image>
+</view>
+<!-- 底边栏 -->
+<view class='bottom-container'>
+  <view></view>
+  <view>
+    <button class='connect' >联系卖家</button>
+  </view>
+  <view>
+    <button class='go'>立即购买</button>
+  </view>
+</view>

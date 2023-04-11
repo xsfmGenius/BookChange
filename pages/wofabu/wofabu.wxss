@@ -1,0 +1,53 @@
+/* pages/wofabu/wofabu.wxss */
+.together-box{
+  display: flex;
+  height:280rpx;
+  margin:0 0 10rpx 0;
+  border:5rpx solid rgba(220,220,220,1);
+  border-radius:10rpx;
+  background:#fff;
+}
+.together-left{
+  display: flex;
+  align-items:center;
+  display: inline-flex;
+  justify-content: center;  
+  flex-direction:column;
+  width:30%;
+  height:100%;
+}
+.together-left image{
+  width: 90%;
+  height: 80%;
+  margin: auto;
+}
+.together-right{
+  width: 70%;
+  height:100%;
+  margin:30rpx 0 0 10rpx;
+  flex-flow: column;
+  justify-content: space-between;
+  display:flex;
+  flex-wrap:wrap;
+  position: relative;
+}
+.together-right text:first-child{
+  font-size: 30rpx;
+  margin:10rpx 10rpx 0 10rpx; 
+  color: #000;
+  /* letter-spacing:7rpx; */
+}
+.together-right text:nth-child(2){
+  position:absolute;
+  right:20rpx;
+  top:170rpx;
+  font-size: 40rpx;
+  color: #3bcab2;
+}
+.together-right image{
+  position:absolute;
+  right:20rpx;
+  top:10rpx;
+  height:40rpx;
+  width:40rpx;
+}

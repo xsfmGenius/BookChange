@@ -1,0 +1,160 @@
+/* pages/fabu/fabu.wxss */
+/* 标头 */
+.title{
+  display:flex;
+  width:750rpx;
+  height:55rpx;
+  margin-bottom:5rpx;
+  background-color: #fff;
+  padding:10rpx 0 10rpx 20rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.title text{
+  font-size: 38rpx;
+  color: #3bcab2;
+  letter-spacing:10rpx;
+  font-weight:bold;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.title button{
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+  display:flex;
+  width:140rpx;
+  height:55rpx;
+  font-size: 28rpx;
+  margin-left:320rpx;
+  background-color: #3bcab2;
+  color:#fff;
+  border-radius: 50rpx;
+}
+.title button:active{
+  background-color: #1cb69c;
+}
+
+
+/* 书名 */
+.bookname{
+  display: flex;
+  height:70rpx;
+  background-color:#fff;
+  padding:20rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.bookname text{
+  width:130rpx;
+  font-size: 38rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.bookname input{
+  padding-left:25rpx;
+  display:inline-block;
+  width:600rpx;
+  height:70rpx;
+  border-bottom-style: solid;
+  border-color:#a6a6a6;
+  align-self: center;
+}
+
+/* 价格 */
+.bookprice{
+  display: flex;
+  height:70rpx;
+  background-color:#fff;
+  padding:20rpx;
+  vertical-align: middle;
+  align-items: center;
+  /* justify-content: center;  */
+}
+.bookprice text{
+  width:130rpx;
+  font-size: 38rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.bookprice input{
+  padding-left:25rpx;
+  display:inline-block;
+  width:100rpx;
+  height:70rpx;
+  border-bottom-style: solid;
+  border-color:#a6a6a6;
+  align-self: center;
+}
+
+/* 封面 */
+.bookcover{
+  display: flex;
+  height:200rpx;
+  background-color:#fff;
+  padding:20rpx;
+  vertical-align: middle;
+  align-items: center;
+  /* justify-content: center;  */
+}
+.bookcover text{
+  width:130rpx;
+  font-size: 38rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.bookcover image{
+  height:180rpx;
+  width:130rpx;
+}
+.bookcover icon{
+  position:absolute;
+  left:260rpx;
+  top:320rpx;
+}
+
+/* 详情 */
+.bookdetail{
+  display: flex;
+  height:250rpx;
+  background-color:#fff;
+  padding:20rpx;
+  vertical-align: middle;
+  align-items: center;
+  /* justify-content: center;  */
+}
+.bookdetail text{
+  width:130rpx;
+  font-size: 38rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.bookdetail textarea{
+  padding:10rpx 25rpx;
+  display:inline-block;
+  width:600rpx;
+  height:230rpx;
+  border-style: solid;
+  border-color:#a6a6a6;
+  border-width: 5rpx;
+  align-self: center;
+  border-radius: 20rpx;
+  white-space:pre-wrap;
+  white-space:-moz-pre-wrap;
+  white-space:-o-pre-wrap;
+  word-wrap:break-word;
+}

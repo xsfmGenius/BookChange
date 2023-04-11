@@ -1,0 +1,17 @@
+<!--pages/wodingdan/wodingdan.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<view class='container'>
+    <block wx:for="{{book}}" wx:key="index">
+      <view class='together-box' bindtap="gotoxiangqing" data-bookname="{{item.bookname}}">
+        <view class='together-left'>
+          <image src="{{item.bookcover}}"></image>
+        </view>
+        <view class='together-right'>  
+          <text>{{item.bookname}}</text>
+          <text>￥{{filters.toFix(item.price)}}</text>
+          <text>×{{item.num}}</text>
+          <text>实付款￥{{filters.toFix(item.price*item.num)}}</text>
+        </view>
+      </view>
+    </block>
+  </view>

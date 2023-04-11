@@ -1,0 +1,90 @@
+/* pages/xinxi/xinxi.wxss */
+/* 标头 */
+.title{
+  display:flex;
+  width:750rpx;
+  height:55rpx;
+  margin-bottom:5rpx;
+  background-color: #fff;
+  padding:10rpx 0 10rpx 20rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.title text{
+  font-size: 38rpx;
+  color: #3bcab2;
+  letter-spacing:10rpx;
+  font-weight:bold;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.title button{
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+  display:flex;
+  width:140rpx;
+  height:55rpx;
+  font-size: 28rpx;
+  margin-left:320rpx;
+  background-color: #3bcab2;
+  color:#fff;
+  border-radius: 50rpx;
+}
+.title button:active{
+  background-color: #1cb69c;
+}
+
+/* 书名 */
+.information{
+  display:flex;
+  position: relative;
+  height:50rpx;
+  background-color:#fff;
+  padding:20rpx;
+  vertical-align: middle;
+  align-items: center;
+  /* justify-content: center; */
+}
+.name{
+  width:250rpx;
+  font-size: 38rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  line-height:100%;
+}
+.use{
+  width:250rpx;
+  font-size: 38rpx;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  line-height:100%;
+  position: absolute;
+  right: 50rpx;
+}
+.information input{
+  font-size: 38rpx;
+  padding-left:25rpx;
+  display:inline-block;
+  width:250rpx;
+  height:70rpx;
+  align-self: center;
+  text-align: right;
+  position: absolute;
+  right: 50rpx;
+}
+.arrow{
+  display:inline-block;
+  position: absolute;
+  right: 20rpx;
+  color:#a6a6a6;
+}
+

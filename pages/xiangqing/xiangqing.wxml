@@ -1,0 +1,36 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+
+<!-- 图书展示 -->
+<view class='book-box'>
+  <view class='book-icon'>
+    <image src='{{bookcover}}'></image>
+  </view>
+  <text class='book-name'>{{bookname}}</text>
+  <text class='book-price'>￥{{bookprice}}</text>
+</view>
+
+<!-- 图文详情 -->
+<view class='detail-container'>
+  <view class='detail-text'>
+    <text class='detail-text'>图文详情</text>
+  </view> 
+  <view class='detail-book'>
+  </view> 
+</view> 
+
+<!-- 底边栏 -->
+<view class='bottom-container'>
+  <view bindtap='gotoshouye'>
+    <image src='../../image/home_off.png'></image>
+  </view>
+  <view bindtap='gotogouwuche'>
+    <image src='../../image/cart.png'></image>
+  </view>
+  <view>
+    <button class='goshop' bindtap='addbook'>加入购物车</button>
+  </view>
+  <view>
+    <button class='go' bindtap='buybook'>立即购买</button>
+    </view>
+</view>

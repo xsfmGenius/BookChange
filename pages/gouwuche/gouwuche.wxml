@@ -1,0 +1,43 @@
+<!--pages/gouwuche/gouwuche.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<view class="title">
+  <text>购物车</text>
+</view>
+<view class='right-container'>
+    <block wx:for="{{categoryBook}}" wx:key="index">
+      <view class='category-box' bindtap='gotoxiangqing' data-bookname="{{item.bookname}}">
+        <view class='category-left'>
+          <image src="{{item.bookcover}}"></image>
+        </view>
+        <view class='category-right'>  
+          <text class='bookname'>{{item.bookname}}</text>
+          <view class="deleteicon" catchtap="delete" data-bookname="{{item.bookname}}" data-num="{{item.num}}" data-price="{{item.price}}" data-index="{{index}}">
+            <image src="../../image/delete.png"></image>
+          </view>
+          <view class="numcontrol">
+            <view catchtap="add" data-bookname="{{item.bookname}}" data-num="{{item.num}}" data-price="{{item.price}}" data-index="{{index}}">
+              <image src="../../image/jia.png"></image>
+            </view>
+            <view class="booknum">
+              <text>{{item.num}}</text>
+            </view>
+            <view catchtap="minus" data-bookname="{{item.bookname}}" data-num="{{item.num}}" data-price="{{item.price}}" data-index="{{index}}">
+              <image src="../../image/jian.png"></image>
+            </view>
+          </view>
+          <text class="bookprice">￥{{filters.toFix(item.price)}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+<!-- 底边栏 -->
+<view class='bottom-container'>
+  <view></view>
+  <view>
+    <text class="bookprice">￥{{filters.toFix(allprice)}}</text>
+  </view>
+  <view>
+    <button class='go' bindtap="buy">立即购买</button>
+  </view>
+</view>

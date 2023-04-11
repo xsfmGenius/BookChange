@@ -1,0 +1,68 @@
+/* pages/wode/wode.wxss */
+/* 上半 */
+.profile{
+  width:750rpx;
+  background-color: #3bcab2;
+  height:300rpx;
+  display:flex;
+  align-items:center;
+  justify-content: center;  
+  display: flex;
+  flex-direction:column;
+}
+.pro{
+  /* display:flex; */
+  height:120rpx;
+  width:120rpx;
+  border-radius: 50%;
+}
+.profile text{
+  color:#fff;
+  margin-top:20rpx;
+  font-size:40rpx;
+  letter-spacing:3rpx;
+  font-weight:bold;
+}
+.profile button{
+  font-size: 32rpx;
+  letter-spacing:5rpx;
+  width:150rpx;
+  height:60rpx;
+  align-items:center;
+  justify-content: center;  
+  display: flex;
+  flex-direction:column;
+}
+.exit{
+  width:60rpx;
+  height:60rpx;
+  position:absolute;
+  right:20rpx;
+  top:20rpx;
+}
+
+/* 下半 */
+.control{
+  width:750rpx;
+  display:flex;
+  height:180rpx;
+  background-color: #fff;
+  margin-top:10rpx;
+  border-top:solid rgb(220,220,220) 5rpx;
+  border-bottom:solid rgb(220,220,220) 5rpx
+}
+
+.control view{
+  width:250rpx;
+  align-items:center;
+  display: inline-flex;
+  justify-content: center;  
+  flex-direction:column;
+}
+.control image{
+  width:50rpx;
+  height:50rpx;
+}
+.control text{
+  font-size: 28rpx;
+}

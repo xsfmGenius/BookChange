@@ -1,0 +1,81 @@
+/* pages/wofatie/wofatie.wxss */
+.view-box{
+  display:flex;
+  width:750rpx;
+  background-color: #fff;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom:20rpx;
+  padding-bottom:20rpx;
+}
+.user{
+  height:100rpx;
+  width:750rpx;
+  margin-bottom:20rpx;
+  display:flex;
+  padding:10rpx 0 10rpx 20rpx;
+  vertical-align: middle;
+  align-items: center;
+  position: relative;
+  /* border-bottom: 3rpx solid rgb(220,220,220); */
+}
+.userpro{
+  display:flex;
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+}
+.delete{
+  position:absolute;
+  right:30rpx;
+  top:30rpx;
+  height:50rpx;
+  width:50rpx;
+}
+.user text:first-child{
+  margin-top:10rpx;
+  font-size:35rpx;
+  color:#3bcab2;
+  line-height:60rpx;
+  display:flex;
+  margin-left:30rpx;
+}
+.user text:nth-child(2){
+  margin-top:-10rpx;
+  font-size:26rpx;
+  color:#515151;
+  line-height:60rpx;
+  display:flex;
+  margin-left:30rpx;
+}
+.view textarea{
+  width:690rpx;
+  line-height:1.5;
+  padding:20rpx 0 20rpx 30rpx;
+  height:auto;
+  letter-spacing:3rpx;
+  white-space:pre-wrap;
+  white-space:-moz-pre-wrap;
+  white-space:-o-pre-wrap;
+  word-wrap:break-word;
+}
+.picture{
+  height:200rpx;
+  width:200rpx;
+  display:inline-block;
+  margin-left:30rpx;
+  margin-right:10rpx;
+}
+
+.review{
+  width:690rpx;
+  display:block;
+  margin:10rpx 0 0 30rpx;
+  font-size: 26rpx;
+  white-space:normal;
+  word-break:break-all;
+  word-wrap:break-word;
+}
+.review:active{
+  background-color: rgb(245, 245, 245);
+}

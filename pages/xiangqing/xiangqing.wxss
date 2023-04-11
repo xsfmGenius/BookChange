@@ -1,0 +1,146 @@
+/* pages/xiangqing/xiangqing.wxss */
+/* 图书展示 */
+.book-box{
+  width:100%;
+  height:100%;
+  flex-direction: column;
+  background-color:#fff;
+}
+.book-icon{
+  width: 750rpx;
+  height: 700rpx;
+  justify-content: center;
+  align-items:center;
+  display: inline-flex;
+  border-bottom:solid 5rpx;
+  border-color:rgb(220,220,220);
+}
+.book-icon image{
+  width:80%;
+  height:100%;
+}
+.book-name{
+  display:block;
+  margin:20rpx 0 25rpx 30rpx;
+  /* height:38rpx; */
+  font-size:30rpx;
+}
+.book-price{
+  display:block;
+  padding-bottom:20rpx;
+  margin:0 0 20rpx 30rpx;
+  /* height:25rpx; */
+  font-size:42rpx;
+  color:#3bcab2;
+  /* margin-top:5rpx; */
+}
+
+/* 图文详情 */
+.detail-container{
+  margin-top:20rpx;
+  height: 200rpx;
+  display: block;
+  /* border-style:solid; 
+  border-color: #3bcab2;  */
+  background-color: #fff;
+}
+.detail-text{
+  display:block;
+  height:40%;
+  background-color:#fff;
+  border-bottom:solid;
+  border-color:rgb(220,220,220);
+  border-width:3rpx;
+}
+.detail-text text{
+  height:100%;
+  width:100%;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing:20rpx;
+  /* font-weight:bold; */
+}
+.detail-book{
+  display: flex;
+  height:60%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+  flex-direction: column;
+}
+/* 底边栏 */
+.bottom-container{
+  height:90rpx;
+  width:750rpx;
+  display: flex;
+  line-height:80rpx;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  background-color: #fff;
+}
+.bottom-container image{
+  height:50%;
+  width: 50%;
+}
+.bottom-container view:first-child{
+  height:100%;
+  width:12%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  /* border-right:solid;
+  border-color:rgb(220,220,220);
+  border-width:1rpx;  */
+}
+.bottom-container view:nth-child(2){
+  height:100%;
+  width:12%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
+}
+button text{
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-container view:nth-child(3){
+  display:flex;
+  height:100%;
+  width:38%;
+}
+.goshop{
+  width:100%;
+  height:100%;
+  font-size: 28rpx;
+  letter-spacing:2rpx;
+  background-color: #3bcab2;
+  color:#fff;
+  border-radius: 0rpx;
+  border-style: none;
+}
+.goshop:active{
+  background-color: #1cb69c;
+}
+.bottom-container view:nth-child(4){
+  display:flex;
+  height:100%;
+  width:38%;
+}
+.go{
+  width:100%;
+  height:100%;
+  font-size: 28rpx;
+  letter-spacing:2rpx;
+  background-color: #45b97c;
+  color:#fff;
+  border-radius: 0rpx;
+  border-style: none;
+}
+.go:active{
+  background-color: #52ac7c;
+}

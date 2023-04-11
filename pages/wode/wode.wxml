@@ -1,0 +1,24 @@
+<!--pages/wode/wode.wxml-->
+<!-- 上半 -->
+<view class='profile'>
+  <image bindtap="logout" class="pro" wx:if='{{username.length !== 0}}' src="{{userprofile}}"></image>
+  <text wx:if='{{username.length !== 0}}'>{{username}}</text>
+  <image bindtap="setinform" class="exit" wx:if='{{username.length !== 0}}' src="../../image/set.png"></image>
+  <button bindtap="login" wx:if='{{username.length== 0}}'>登录</button>
+</view>
+
+<!-- 下半 -->
+<view class="control">
+  <view bindtap='gotowodingdan'>
+    <image src="../../image/dingdan.png"></image>
+    <text>我的订单</text>
+  </view>
+  <view bindtap='gotowofabu'>
+    <image src="../../image/fabu.png"></image>
+    <text>我的发布</text>
+  </view>
+  <view bindtap='gotowofatie'>
+    <image src="../../image/fatie.png"></image>
+    <text>我的发帖</text>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/sousuo/sousuo.wxml-->
+<!-- 搜索 -->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<view class='search'>
+  <input value="{{inputValue}}" confirm-type='search' placeholder='搜索图书' bindinput="getname" bindconfirm="searchbook"></input>
+  <image class="search_image" src='../../image/search.png' bindtap="searchbook"></image>
+</view>
+
+<!-- 搜索结果 -->
+<view class='right-container'>
+    <block wx:for="{{categoryBook}}" wx:key="key">
+      <view class='category-box' bindtap='gotoxiangqing' data-bookname="{{item.name}}">
+        <view class='category-left'>
+          <image src="{{item.cover}}"></image>
+        </view>
+        <view class='category-right'>  
+          <text>{{item.name}}</text>
+          <text>￥{{filters.toFix(item.price)}}</text>
+          <button class='go' catchtap="goshop" data-bookname="{{item.name}}" data-bookprice="{{item.price}}" data-bookcover="{{item.cover}}">+</button>
+        </view>
+      </view>
+    </block>
+  </view>

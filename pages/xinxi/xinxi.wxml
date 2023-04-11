@@ -1,0 +1,27 @@
+<!--pages/xinxi/xinxi.wxml-->
+<!-- 标头 -->
+<view class="title">
+  <text>| 个人信息</text>
+  <button bindtap="up">提交</button>
+</view>
+
+<view class='information'>
+  <text class='name'>用户名：</text>
+  <text class='use'>{{username}}</text>
+</view>
+<view class='information'>
+  <text class='name'>收件人：</text>
+  <input bindinput="getreceiver" value="{{user.receiver}}"></input>
+  <text class='arrow'>></text>
+</view>
+<view class='information'>
+  <text class='name'>电话：</text>
+  <input bindinput="getphone" type="digit" value="{{user.phone}}"></input>
+  <text class='arrow'>></text>
+</view>
+<view class='information'>
+  <text class='name'>宿舍门牌：</text>
+  <input bindinput="getdorm" value="{{user.dorm}}"></input>
+  <text class='arrow'>></text>
+</view>
+
